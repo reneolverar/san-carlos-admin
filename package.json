@@ -3,15 +3,15 @@
 	"version": "1.0.0",
 	"description": "",
 	"type": "module",
-	"main": "./dist/index.js",
+	"main": "index.js",
 	"scripts": {
 		"test": "jest --watch --testTimeout=10000",
 		"client": "npm run dev --prefix client",
 		"server": "tsx --watch index.ts",
 		"dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
 		"build": "tsc",
-		"start": "node ./dist/index.js",
-		"render-build": "npm install --prefix ./client && npm run build --prefix ./client && npm install"
+		"start": "node index.js",
+		"render-build": "npm install --prefix ./client && npm run build --prefix ./client && npm install && tsc"
 	},
 	"keywords": [],
 	"author": "",
