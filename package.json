@@ -9,7 +9,7 @@
 		"client": "npm run dev --prefix client",
 		"server": "tsx --watch index.ts",
 		"dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
-		"build": "npx tsx",
+		"build": "tsc",
 		"start": "node index.ts"
 	},
 	"keywords": [],
