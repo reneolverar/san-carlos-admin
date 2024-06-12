@@ -3,7 +3,7 @@
 	"version": "1.0.0",
 	"description": "",
 	"type": "module",
-	"main": "index.ts",
+	"main": "./dist/index.js",
 	"scripts": {
 		"test": "jest --watch --testTimeout=10000",
 		"client": "npm run dev --prefix client",
